@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>	
+	<!-- 活动编号 -->
+	<code>cn20140000</code>
+	<!-- 活动名称 -->
+	<name>默认活动</name>
+	<!-- 开始时间，格式yyyy-MM-dd HH:mm:ss，留空则不限制 -->
+	<start>2014-01-01 00:00:00</start>
+	<!-- 结束时间，格式yyyy-MM-dd HH:mm:ss，留空则不限制 -->
+	<end>2016-01-31 23:59:59</end>
+	<!-- 省份限制：type=0 限制省份，type=1非限制省份，多个省份用英文逗号分开 -->
+	<prov type="0"></prov>
+	<!-- 地区限制：type=0 限制地区，type=1非限制地区，多个地区用英文逗号分开 -->
+	<area type="0"></area>
+	<!-- 非中国移动省份，多个省份用英文逗号分开 -->
+	<notcmccprov>81,82</notcmccprov>
+	<login>
+		<!-- 记录登录数据的存储过程 -->
+		<procedure>pkg_y_cn20110207_common.p_y_cn20110207_loginlog</procedure>
+		<!-- 登录失败次数，每天当失败次数大于该次数时，需要输入图形验证码 -->
+		<minfailedtimes>3</minfailedtimes>
+		<!-- 一天最多登录失败次数，当失败次数大于该次数时，当天禁止登录 -->
+		<maxfailedtimes>20</maxfailedtimes>
+		<!-- 会话超时时间（单位：分钟） -->
+		<sessiontimeout>20</sessiontimeout>
+		<!-- 登录活跃行为上报行为标签编号 -->
+		<usertag></usertag>
+	</login>
+	<smsverify>
+		<!-- 短信下发端口号 -->
+		<spnumber></spnumber>
+		<!-- 短信验证码有效时长（单位：分） -->
+		<expire>10</expire>
+		<!-- 短信验证码内容模板 -->
+		<content>尊敬的客户：{VC}是您本次的短信验证码，{MIN}分钟内有效。[中国移动139邮箱]</content>
+	</smsverify>
+	<!-- 项目自定义配置节点，可以自由添加子节点 -->
+	<appsetting>
+		<test>this is my test setting</test>
+	</appsetting>
+</project>

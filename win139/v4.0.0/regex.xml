@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<regexconfig>
+  <!--验证手机号码的正则表达式-->
+  <mobile>^1\d{10,10}$</mobile>
+  <!--验证(86)手机号码的正则表达式-->
+  <mobile86>^(86)?1\d{10,10}$</mobile86>
+  <!--验证139邮箱别名的正则表达式-->
+  <mail139alias>^[a-zA-Z][\d\w\.\-_]{4,14}$</mail139alias>
+  <!--验证139邮箱别名或手机号码的正则表达式-->
+  <mobile139alias>^(([a-zA-Z][\d\w\.\-_]{4,14})|(1\d{10,10}))$</mobile139alias>
+  <!--验证139邮箱密码的正则表达式-->
+  <mailpassword>^[^\u4e00-\u9fa5\uFF00-\uFFFF]{6,32}$</mailpassword>
+  <!--验证邮箱地址的正则表达式-->
+  <mailaddress>^\w+([-+\.\']\w+)*@\w+([-\.]\w+)*\.\w+([-\.]\w+)*$</mailaddress>
+  <!--验证国内固话或小灵通的正则表达式（带区号）-->
+  <chinaphone>^((\d{3,4}-\d{8})|(\d{4}-\d{7}))$</chinaphone>
+  <!--验证中国身份证的正则表达式-->
+  <chinaidcard>^((\d{15})|(\d{17}[\d\w]))$</chinaidcard>
+  <!--验证邮编的正则表达式-->
+  <zipcode>^\d{6}$</zipcode>
+  <!--验证IP地址的正则表达式-->
+  <ipaddress>^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$</ipaddress>
+  <!--验证URL的正则表达式-->
+  <url>^(https?|ftp|file)://((localhost)|(([\w-]+\.)+[\w-]+))(:\d+)?(/.*?)?$</url>
+  <!--验证完整文件名（带扩展名）的正则表达式-->
+  <filename><![CDATA[^[^\\\/:\*\?""<>\|]+\.[^\\\/:\*\?""<>\|]+$]]></filename>
+  <!--验证完整物理路径（带完整文件名）的正则表达式-->
+  <path><![CDATA[^[A-z]:\\([^\\\/:\*\?""<>\|]+\\)*[^\\\/:\*\?""<>\|]+\.[^\\\/:\*\?""<>\|]+$]]></path>
+  <!--验证以数字开始后接逗号+数字的格式的正则表达式-->
+  <numbercomma>^\d+(,\d+)*$</numbercomma>
+  <!--验证全是数字的正则表达式-->
+  <number>^\d+$</number>
+  <!--验证全是中文的正则表达式-->
+  <chinese>^[\u4e00-\u9fa5]+$</chinese>
+  <!--验证全是字母(不分大小写)的正则表达式-->
+  <letter>^[A-z]+$</letter>
+  <!--验证以英文字母开始，后接字母数字和下划线(一般应用于帐号、密码之类)的正则表达式-->
+  <letternumberunderline>^[A-z]\w*$</letternumberunderline>
+  <!--验证yyyyMM的正则表达式-->
+  <yyyymm>^\d{4}(?:0[1-9]|1[0-2])$</yyyymm>
+  <!--验证含有全角字符０－９，ａ－ｚ，Ａ－Ｚ的正则表达式-->
+  <sbccheck>[\uFF10-\uFF19\uFF41-\uFF5A\uFF21-\uFF3A]</sbccheck>
+  <!--验证发送短信的SpNumber的正则表达式-->
+  <spnumber>^\d{1,21}$</spnumber>
+  <!-- 短信内容 -->
+  <smsbody>^.{1,400}$</smsbody>
+  <!-- 彩信标题 -->
+  <mmssubject>^.{1,256}$</mmssubject>
+  <!--验证验证码的正则表达式-->
+  <verifycode>^[A-z\d]{1,8}$</verifycode>
+</regexconfig>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    **MemCached相关配置
+      poolname 连接池名称，当服务器列表等其它参数需要和默认不相同时，需要修改这个值
+      ServerList 服务器列表以逗号分隔。如：192.168.3.234:11211,192.168.3.234:11211
+      Weights 服务器的负载量。与ServerList对应。以逗号分隔。如：3,2
+      MaxConnections socke连接池的最大连接数（默认的最大连接1024）
+      SocketConnectTimeout socke连接超时时间（毫秒）
+      SocketTimeout socke读取的超时时间（毫秒）
+      MaintenanceSleep 维护线程的休眠时间（毫秒）
+      Failover 联机失败是否自动切换服务器，为true时将自动切换服务器，否则不切换返回null，由于目前我们是一台机在做负载所以这里设为false
+      Nagle 算法标识，是否用nagle算法启动socket
+  -->
+<memcached>
+  <poolname>yzkf</poolname>
+  <serverlist>192.168.18.121:4458</serverlist>
+  <weights></weights>
+  <maxconnections>250</maxconnections>
+  <socketconnecttimeout>2000</socketconnecttimeout>
+  <sockettimeout>3000</sockettimeout>
+  <maintenancesleep>5000</maintenancesleep>
+  <failover>true</failover>
+  <nagle>false</nagle>
+</memcached>

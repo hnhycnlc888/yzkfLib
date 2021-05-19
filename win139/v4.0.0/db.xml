@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databases>
+  <db name="oracle" type="default">
+  	<!-- 驱动类名 -->
+  	<driverClassName>oracle.jdbc.driver.OracleDriver</driverClassName>
+  	<!-- 数据库链接串 -->
+  	<url>jdbc:oracle:thin:@192.168.18.121:1521:gzdev</url>
+  	<!-- 数据库连接用户名 -->
+  	<username>p_yzkf</username>
+  	<!-- 数据库连接密码 -->
+  	<password>p_yzkf</password>
+  	<!-- 连接池中最大活跃链接数 -->
+  	<maxActive>100</maxActive>
+  	<!-- 连接池中最大的空闲连接数 ，默认为maxActive数-->
+  	<maxIdle>100</maxIdle>
+  	<!-- 连接池中最小的连接数 -->
+  	<minIdle>10</minIdle>
+  	<!-- 连接池创建时初始的连接数 -->
+  	<initialSize>10</initialSize>
+  	<!-- 连接超时时间，单位毫秒(当连接池中没有可用的连接时，连接池将对超过该值还没有返回的连接抛出超时异常) -->
+  	<maxWait>60000</maxWait>
+  	<!-- 从连接池获取数据库连接时是否进行验证，默认false，如果设置为true，必须设置validationQuery -->
+  	<testOnBorrow>true</testOnBorrow>
+  	<!-- 从连接池中获取数据库链接返回时是否进行验证，默认false，如果设置为true，必须设置validationQuery -->
+  	<testOnReturn>false</testOnReturn>
+  	<!-- 是否验证闲置对象，闲置对象将被从连接池中删除，默认false，如果设置为true，必须设置validationQuery -->
+  	<testWhileIdle>true</testWhileIdle>
+  	<!-- 用于验证数据库连接是否有效，默认null，例如：SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) -->
+  	<validationQuery>select 1 from dual</validationQuery>
+  	<!-- 验证类名，如果指定将代替其他查询验证，默认null -->
+  	<validatorClassName></validatorClassName>
+  	<!-- 验证和清除线程休眠时间，单位毫秒，指示多长时间检查一次空闲、无效的连接 -->
+  	<timeBetweenEvictionRunsMillis>30000</timeBetweenEvictionRunsMillis>
+	<!-- 对象在连接池中被逐出前总闲置时间的最小值，单位毫秒 -->
+  	<minEvictableIdleTimeMillis>30000</minEvictableIdleTimeMillis>
+	<!-- 标志是否移除使用超过removeAbandonedTimeout的连接 -->
+  	<removeAbandoned>true</removeAbandoned>
+  	<!-- 连接使用超时时间，单位秒 -->
+  	<removeAbandonedTimeout>60</removeAbandonedTimeout>
+  	<!-- 标记是否记录连接移除信息 -->
+  	<logAbandoned>true</logAbandoned>
+  	<!-- 发送给jdbc的连接属性，格式[propertyName=property;]，默认null -->
+  	<connectionProperties></connectionProperties>
+  </db>
+  <db name="mssql2008" type="microsfot">
+  </db>
+  <db name="mysql" type="free">
+  	<!-- 驱动类名 -->
+  	<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+  	<!-- 数据库链接串 -->
+  	<url>jdbc:mysql://localhost:3306/test</url>
+  	<!-- 数据库连接用户名 -->
+  	<username>root</username>
+  	<!-- 数据库连接密码 -->
+  	<password>Telpo.syhuo2019!@#</password>
+  	<!-- 连接池中最大活跃链接数 -->
+  	<maxActive>100</maxActive>
+  	<!-- 连接池中最大的空闲连接数 ，默认为maxActive数-->
+  	<maxIdle>100</maxIdle>
+  	<!-- 连接池中最小的连接数 -->
+  	<minIdle>10</minIdle>
+  	<!-- 连接池创建时初始的连接数 -->
+  	<initialSize>10</initialSize>
+  	<!-- 连接超时时间，单位毫秒(当连接池中没有可用的连接时，连接池将对超过该值还没有返回的连接抛出超时异常) -->
+  	<maxWait>60000</maxWait>
+  	<!-- 从连接池获取数据库连接时是否进行验证，默认false，如果设置为true，必须设置validationQuery -->
+  	<testOnBorrow>true</testOnBorrow>
+  	<!-- 从连接池中获取数据库链接返回时是否进行验证，默认false，如果设置为true，必须设置validationQuery -->
+  	<testOnReturn>false</testOnReturn>
+  	<!-- 是否验证闲置对象，闲置对象将被从连接池中删除，默认false，如果设置为true，必须设置validationQuery -->
+  	<testWhileIdle>true</testWhileIdle>
+  	<!-- 用于验证数据库连接是否有效，默认null，例如：SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) -->
+  	<validationQuery>select 1</validationQuery>
+  	<!-- 验证类名，如果指定将代替其他查询验证，默认null -->
+  	<validatorClassName></validatorClassName>
+  	<!-- 验证和清除线程休眠时间，单位毫秒，指示多长时间检查一次空闲、无效的连接 -->
+  	<timeBetweenEvictionRunsMillis>30000</timeBetweenEvictionRunsMillis>
+	<!-- 对象在连接池中被逐出前总闲置时间的最小值，单位毫秒 -->
+  	<minEvictableIdleTimeMillis>30000</minEvictableIdleTimeMillis>
+	<!-- 标志是否移除使用超过removeAbandonedTimeout的连接 -->
+  	<removeAbandoned>true</removeAbandoned>
+  	<!-- 连接使用超时时间，单位秒 -->
+  	<removeAbandonedTimeout>60</removeAbandonedTimeout>
+  	<!-- 标记是否记录连接移除信息 -->
+  	<logAbandoned>true</logAbandoned>
+  	<!-- 发送给jdbc的连接属性，格式[propertyName=property;]，默认null -->
+  	<connectionProperties></connectionProperties>
+  </db>
+</databases>

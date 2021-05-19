@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/commons-pool-1.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar" sourcepath="D:/OpenSource/apache-log4j-2.0-rc1-src/log4j-1.2-api/src"/>
+	<classpathentry kind="lib" path="lib/ojdbc14.jar" sourcepath=""/>
+	<classpathentry kind="lib" path="lib/servlet-api.jar" sourcepath="D:/OpenSource/javax.servlet.zip"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/tomcat-jdbc.jar" sourcepath="F:/openSource/jdbc-pool/src"/>
+	<classpathentry kind="lib" path="lib/tomcat-juli.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbutils-1.5.jar" sourcepath="D:/OpenSource/commons-dbutils-1.5-src.zip"/>
+	<classpathentry kind="lib" path="lib/org.json.jar" sourcepath="D:/OpenSource/org.json/src"/>
+	<classpathentry kind="lib" path="lib/user-agent-utils-3.12.jar"/>
+	<classpathentry kind="lib" path="lib/Memcached-Java-Client-3.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/javax.mail.jar"/>
+	<classpathentry kind="lib" path="lib/ehcache-core-2.6.9.jar" sourcepath="D:/OpenSource/ehcache-core-2.6.9/src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_181">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

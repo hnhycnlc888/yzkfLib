@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<app>
+	<!-- 敏感字配置信息缓存服务器url -->
+	<filterwords type="url">http://192.168.3.217/FilterWordsInterface/FilterWordsInterface.ashx</filterwords>
+	<!--   黑名单IP列表缓存服务器url  filteripurl 服务器url  --> 
+	<filterip type="url">http://zone.mail.10086.cn/api/filterwords/FilterIPInterface.ashx</filterip>
+	<!-- 日志文件路径 -->
+    <log>
+		<!-- 应用程序日志 -->
+		<applogpath>d:\win139\log\</applogpath>
+		<!-- 行为日志 -->
+		<actionlogpath>d:\win139\actionlog\</actionlogpath>
+		<clicklogurl>http://test.zone139.com:8001/2011/moclicklog/MoLog.aspx</clicklogurl>
+	</log>
+	<verify>
+	  <!--
+		验证码路径
+		down 获取验证码的url
+		post 验证验证码的url
+	  -->
+	  <down>http://192.168.9.196:20080</down>
+	  <post>http://192.168.9.196:20081/confirmimage</post>
+	  <!--WAP版图形验证码 -->
+	  <wapgeturl>http://imgcodewap.api.localdomain:10080/getimage</wapgeturl>
+	  <wapposturl>http://imgcodewap.api.localdomain:10081/confirmimage</wapposturl>
+	  <wapclientid>33</wapclientid>
+	</verify>
+</app>

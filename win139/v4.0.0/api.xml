@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<apiconfig>
+  <mail>
+   <!--
+   	积分接口配置
+   	host 积分接口socket服务器地址
+   	port 积分接口scoket服务器端口
+   	encoding	服务器返回字符串编码格式
+   	timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+   -->
+  	<integral>
+  	  <host>192.168.9.197</host>
+      <port>9099</port>
+      <encoding>utf-8</encoding>
+      <timeexpires>30</timeexpires>
+  	</integral>
+    <!--
+      用户登录验证接口配置
+      comefrom 来源
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <userlogin>
+      <comefrom>fengxingoffice</comefrom>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/UserInterface/UserLogin.aspx</requesturl>
+    </userlogin>
+    <!--
+      单点登录到邮箱接口配置
+      comefrom 来源
+      requesturl 数据请求的地址
+    -->
+    <userloginurl>
+      <comefrom>fengxingoffice</comefrom>
+      <requesturl>http://interface.mail.10086.cn:8080/UserInterface/UserLoginUrl.aspx</requesturl>
+    </userloginurl>
+    <!--
+      用户注册接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <userregister>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/userinterface/UserRegister.aspx</requesturl>
+    </userregister>
+    <!--
+      查询手机号码品牌接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <cardtypeinfo>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/UserInterface/GetCardTypeInfo.aspx</requesturl>
+    </cardtypeinfo>
+    <!--
+      用户属性查询接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <userattribute>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://ssointerface.mail.10086.cn:8080/ssointerface/UserAttribute</requesturl>
+    </userattribute>
+    <!--
+      根据SessionKey得到用户名接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <userbykey>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/UserInterface/GetUserByKey.aspx</requesturl>
+    </userbykey>
+    <!--
+      增值业务订购接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <incrementopen>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/UserInterface/IncrementOpen.aspx</requesturl>
+    </incrementopen>
+    <!--
+      查询用户增值业务订购情况接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <userisopen>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/UserInterface/UserIsOpen.aspx</requesturl>
+    </userisopen>
+    <!--
+      积分操作接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <userintegral>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/userinterface/UserIntegral.aspx</requesturl>
+    </userintegral>
+    <!--
+      查询是否开通帐单投递接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <querybill>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/userinterface/QueryBill.aspx</requesturl>
+    </querybill>
+    <!--
+      开通/取消帐单投递接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <billmailing>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/userinterface/BillMailing.aspx</requesturl>
+    </billmailing>
+    <!--
+      查询是否开通邮件提醒接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <mailnotify>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/userinterface/MailNotifyManage.aspx</requesturl>
+    </mailnotify>
+    <!--
+      查询用户邮件数接口配置
+      version 接口版本号
+      encoding 编码方式
+      requesturl 数据请求的地址
+    -->
+    <querymailnum>
+      <version>0100</version>
+      <encoding>UTF-8</encoding>
+      <requesturl>http://221.176.9.93:7722/mailnotifythree/QueryMailNum</requesturl>
+    </querymailnum>
+    <!--
+      查询用户邮件例表接口配置
+      version 接口版本号
+      encoding 编码方式
+      reqsort 01表示邮件列表，只能为01，用其它的会报错
+      clientId 客户端ID，03代表运营，其它id，做了来源URL限制。无法使用
+      requesturl 数据请求的地址
+    -->
+    <minisitemaillist>
+      <version>1.0.0</version>
+      <encoding>UTF-8</encoding>
+      <reqsort>01</reqsort>
+      <clientid>03</clientid>
+      <requesturl>http://221.176.9.93:7711/Minisite/MiniSiteMailList</requesturl>
+    </minisitemaillist>
+    <!--
+      查询用户当月活跃次数接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <useractivenum>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/userinterface/UserActiveNum.aspx</requesturl>
+    </useractivenum>
+    <!--
+      查询用户当月免费短彩信数目接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <userquerysmsormms>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/UserInterface/UserQuerySmsOrMms.aspx</requesturl>
+    </userquerysmsormms>
+    <!--
+      扣减用户当月免费短彩信数目接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <userreducesmsormms>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/UserInterface/UserReduceSmsOrMms.aspx</requesturl>
+    </userreducesmsormms>
+	<!--
+	      查询是否订购139杀毒服务接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <userisorderantivirus>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>GB2312</encoding>
+      <md5key>uoRhiYy74OMdV5Hi</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://interface.mail.10086.cn:8080/userinterface/UserIsOrderAntiVirus.aspx</requesturl>
+    </userisorderantivirus>
+    <!--
+                    查询是否收费用户
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      requesturl 数据请求的地址
+    -->
+    <userischarge>
+      <encoding>UTF-8</encoding>
+      <md5key>7dd6c71563f14f28</md5key>
+      <comefrom>busi_support</comefrom>
+      <requesturl>http://172.16.42.169:8800/ssointerface/UserIsCharge</requesturl>
+    </userischarge>
+    <!--
+	定时邮件
+	comefrom 来源
+	encoding 编码方式
+	categroyId 业务来源
+	func 执行写信操作
+	requesturl 数据请求的地址
+	-->
+	<timingmail>
+		<encoding>UTF-8</encoding>
+		<func>mbox:compose</func>
+		<comefrom>2</comefrom>
+		<categroyId>201000000</categroyId>
+		<requesturl>http://webapp-pd.api.localdomain:9001/RmWeb/noCookiesMail</requesturl>
+	</timingmail>
+  </mail>
+  <sms>
+    <!--
+      用户短信发送接口配置
+      encoding 编码方式
+      requesturl 数据请求的地址
+    -->
+    <smsmsgsend>
+      <encoding>UTF-8</encoding>
+      <opercode>SMS101</opercode>
+      <appid>SMSMsgSendReq</appid>
+      <requesturl>http://smp.api.localdomain:8123/smp</requesturl>
+    </smsmsgsend>
+    <!--
+      用户短信分发接口配置
+      encoding 编码方式
+      md5key 约定的密匙
+    -->
+    <smsmsgdeliver>
+      <encoding>GB2312</encoding>
+      <md5key>pBKQMHnv3ZaZHsxulmqJ</md5key>
+      <comefrom>win</comefrom>
+      <timeexpires>20</timeexpires>
+    </smsmsgdeliver>
+  </sms>
+  <mms>
+    <!--
+      用户彩信发送接口配置
+      md5key 约定的密匙
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <mmsmsgsend>
+      <encoding>utf-8</encoding>
+      <md5key>MzHwKaBeHxUm</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://mms.api.localdomain:7744/mmsApi/MMSSend</requesturl>
+    </mmsmsgsend>
+  </mms>
+  <disk>
+	<!-- 网盘初始化接口 -->
+   <Init>
+   	<encoding>UTF-8</encoding>
+   	<requesturl>http://app.mail.10086rd.cn/mw2/file/disk?func=disk:openApi:init&amp;account={account}</requesturl>
+   </Init>
+   <!-- 网盘上传 -->
+   <upload>
+   	<encoding>UTF-8</encoding>
+   	<requesturl>http://app.mail.10086rd.cn/mw2/file/disk?func=disk:openApi:attachUpload&amp;account={account}</requesturl>
+   </upload>
+   <!--
+      虚拟网盘登录接口配置
+      encoding 编码方式
+      cmd 请求命令，目前都为login
+      clientype 客户端类型，虚拟网盘：1 徽章：1402（暂定）
+      channel 渠道（目前没用）
+      requesturl 数据请求的地址
+    -->
+  	<login>
+  	  <encoding>UTF-8</encoding>
+      <cmd>login</cmd>
+      <clientype>1003</clientype>
+      <channel>1</channel>
+  	  <requesturl>http://mail.10086.cn/login/VirtualDiskLogin.ashx</requesturl>
+  	</login>
+    <!--
+      查询是否开通网盘接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <checkopen>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>UTF-8</encoding>
+      <md5key>richinfo%rd2</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://spaceinterface.mail.10086.cn/Interface_Win139.aspx?act=CheckOpen</requesturl>
+    </checkopen>
+    <!--
+      列举网盘子目录接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <listdir>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>UTF-8</encoding>
+      <md5key>richinfo%rd2</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://spaceinterface.mail.10086.cn/Interface_Win139.aspx?act=ListDir</requesturl>
+    </listdir>
+    <!--
+      列举网盘某目录下文件接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <listfile>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>UTF-8</encoding>
+      <md5key>richinfo%rd2</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://spaceinterface.mail.10086.cn/Interface_Win139.aspx?act=ListFile</requesturl>
+    </listfile>
+    <!--
+      获取网盘文件下载URL接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <downloadurl>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>UTF-8</encoding>
+      <md5key>richinfo%rd2</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://spaceinterface.mail.10086.cn/Interface_Win139.aspx?act=GetDownloadUrl</requesturl>
+    </downloadurl>
+    <!--
+      创建子目录接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <createdir>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>UTF-8</encoding>
+      <md5key>richinfo%rd2</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://spaceinterface.mail.10086.cn/Interface_Win139.aspx?act=CreateDir</requesturl>
+    </createdir>
+    <!--
+      网盘普通上传鉴权请求接口配置
+      username 网盘平台分配给第三方平台的用户名
+      password 网盘平台分配给第三方平台用户对应的用户密码
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址
+    -->
+    <uploadverify>
+      <username>gzspdsyy</username>
+      <password>GZspdsYUNYING</password>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://bg3.space.n20svrg.139.com:8080/netdiskverify/verifyInterface</requesturl>
+    </uploadverify>
+    <!--
+      查询网盘节点接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址，这个有4个地址随便选一个就行
+    -->
+    <userdisknodeinfo>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>UTF-8</encoding>
+      <md5key>Rmr06V1EpxP7kS3DsrPY</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://bg1.space.n20svrg.139.com:8080/netdiskWebserver/GetUserDiskNodeInfo</requesturl>
+      <!--<requesturl>http://bg2.space.n20svrg.139.com:8080/netdiskWebserver/GetUserDiskNodeInfo</requesturl>
+      <requesturl>http://bg3.space.n20svrg.139.com:8080/netdiskWebserver/GetUserDiskNodeInfo</requesturl>
+      <requesturl>http://bg4.space.n20svrg.139.com:8080/netdiskWebserver/GetUserDiskNodeInfo</requesturl>-->
+    </userdisknodeinfo>
+    <!--
+      网盘后台上传接口配置
+      comefrom 来源
+      encoding 编码方式
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+      requesturl 数据请求的地址，由于它的IP或域名需要利用查询网盘节点接口来获得。所以这里为填充符
+    -->
+    <attachtonetdisk>
+      <comefrom>fengxingoffice</comefrom>
+      <encoding>UTF-8</encoding>
+      <md5key>Rmr06V1EpxP7kS3DsrPY</md5key>
+      <timeexpires>20</timeexpires>
+      <requesturl>http://{0}:8080/netdiskWebserver/AddAttachToNetDiskForOperator</requesturl>
+    </attachtonetdisk>
+    <!--
+      检查SID是否正确
+      encoding 编码方式
+      cmd 方法
+      requesturl 数据请求的地址
+    -->
+    <heartbeat>
+      <encoding>UTF-8</encoding>
+      <cmd>heartbeat</cmd>
+      <requesturl>http://mail10086.api.localdomain:8080/VirtualDisk/HeartBeat.ashx </requesturl>
+    </heartbeat>
+  </disk>
+  <sso>
+  	<!-- 用户SSO注册接口
+	ClientID 请求的站点来源，由手机邮箱站点分配给第三方
+	timeexpires 增加的时间秒
+	encoding 编码方式
+	deskey 手机号码DES加密的密钥
+	md5key 生成Skey用的key
+	regurl 注册sso的临时凭证接口地址
+	loginurl web单点登录接口地址
+	waploginurl wap单点登录接口地址 -->
+  	<reglogin>		
+      <encoding>UTF-8</encoding>
+      <timeexpires>10</timeexpires>
+      <clientid>test</clientid>
+      <deskey>123456</deskey>
+      <md5key>123456</md5key>
+      <regurl>http://ssointerface.mail.10086ts.cn:27788/SSOInterface/SSOReg</regurl>
+      <loginurl>http://ssointerface.mail.10086ts.cn:27788/SSOInterface/SSOLogin</loginurl>
+      <waploginurl>http://wapmail.10086.cn:55599/wapsso2</waploginurl>
+  	</reglogin>
+    <!--
+      运营SSO接口配置
+      md5key 生成Skey用的key
+      timeexpires 时间戳所要增加的秒数（大于0,并且小于60）
+    -->
+    <opsso>
+      <md5key>rBjzCNzoV9Qxvmf2</md5key>
+      <timeexpires>5400</timeexpires>
+      <jumpurl>http://zone.n20svrg.139.com/api/sso/ssoforactivity.ashx</jumpurl>
+      <ssoformail>http://zone.n20svrg.139.com/api/sso/ssoformail.ashx</ssoformail>
+      <deskey>mail139@.</deskey>
+    </opsso>
+  </sso>
+  <wap>
+  <!--
+	短地址跳转验证登录
+	md5key 数据签名密钥
+	timeexpires 过期时间，单位秒
+  -->
+    <wapjump>
+      <md5key>7WBPLVrCjK2v9mHy</md5key>
+      <timeexpires>20</timeexpires>
+    </wapjump>
+    <wapsso>
+		<clientid>YunYing_wap</clientid>
+		<md5key>f441d88144a09de9</md5key>
+		<timeexpires>60</timeexpires>
+		<ssoregurl>http://172.16.42.169:8800/ssointerface/SSOReg</ssoregurl>
+		<ssologinurl>http://ssointerface.mail.10086.cn:8080/ssointerface/WAPSSOLogin</ssologinurl>
+	</wapsso>
+  </wap>
+  <addr>
+    <!--
+      通讯录联系人数据导出接口配置
+      version 接口版本号，0100
+      account 认证账号
+      pass 认证密码
+      comefrom 接入来源
+      md5key 生成Skey用的key
+    -->
+    <addrexp>
+      <version>0100</version>
+      <account>win</account>
+      <pass>hJdaJo2pQbRIXBuk</pass>
+      <comefrom>3</comefrom>
+      <md5key>KWlTMuoEx3Vz97ZF</md5key>
+    </addrexp>
+    <!--
+      通讯录联系组数据导出接口配置
+      version 接口版本号，0100
+      account 认证账号
+      pass 认证密码
+      comefrom 接入来源
+      md5key 生成Skey用的key
+    -->
+    <groupexp>
+      <version>0100</version>
+      <account>win</account>
+      <pass>hJdaJo2pQbRIXBuk</pass>
+      <comefrom>3</comefrom>
+      <md5key>KWlTMuoEx3Vz97ZF</md5key>
+    </groupexp>
+    <!--
+      通讯录联系组里联系人数据导出接口配置
+      version 接口版本号，0100
+      account 认证账号
+      pass 认证密码
+      comefrom 接入来源
+      md5key 生成Skey用的key
+    -->
+    <addringrpexp>
+      <version>0100</version>
+      <account>win</account>
+      <pass>hJdaJo2pQbRIXBuk</pass>
+      <comefrom>3</comefrom>
+      <md5key>KWlTMuoEx3Vz97ZF</md5key>
+    </addringrpexp>
+  </addr>
+  <contact>
+    <!-- 接口字符编码 -->
+    <encoding>utf-8</encoding>
+    <!-- 最近联系人生日 -->
+	<birthday>http://addr.api.localdomain:8090/GetContactsBirday</birthday>
+	<!-- 获取谁加了我 -->
+	<whoaddme>http://addr.api.localdomain:8090/WhoAddMeByPage</whoaddme>
+  	<!--分页查询联系人接口/查询指定联系人/查询指定首字母联系人 接口地址，包含所有字段 -->
+  	<querycontacts>http://192.168.9.199:8888/QueryContacts</querycontacts>
+  	<!-- 关键字模糊查询联系人接口地址（精简字段） -->
+  	<searchcontacts>http://192.168.9.199:8888/SearchContacts</searchcontacts>
+  	<!-- 分页查询所有联系人接口地址（精简字段） -->
+  	<queryallcontacts>http://192.168.9.199:8888/QueryAllContacts</queryallcontacts>
+  	<!-- 按首字母查询所有联系人接口(精简字段) -->
+  	<querycontactsbyname>http://192.168.9.199:8888/QueryContactsByName</querycontactsbyname> 
+  	<!-- 获取最近/紧密联系人 -->
+  	<getlccontacts>http://192.168.9.199:8888/GetLCContacts</getlccontacts>
+  	<!-- 添加联系人接口地址 -->
+  	<addcontacts>http://192.168.9.199:8888/AddContacts</addcontacts>
+  	<!-- 增加用户自己的信息 -->
+  	<adduserinfo>http://192.168.9.199:8888/AddUserInfo</adduserinfo>
+  	<!-- 修改用户自己的信息 -->
+  	<modeuserinfo>http://192.168.9.199:8888/ModUserInfo</modeuserinfo>
+  	<!-- 查询用户自己的信息 -->
+  	<queryuserinfo>http://192.168.9.199:8888/QueryUserInfo</queryuserinfo>
+  	<!-- 查询最近10天将要过生日的联系人 -->
+  	<getrecentbirday>http://192.168.9.199:8888/GetContactsBirday</getrecentbirday>
+  	<!-- 用户头像根地址 -->
+  	<headerimagebaseurl>http://res.zone139.com/addr</headerimagebaseurl>
+  </contact>
+  <jpdy>
+  	<!--
+	  精品订阅(云邮局)接口
+	-->
+  	<encoding>UTF-8</encoding>
+  	<!-- 渠道定义：1	SMS，2	WEB，3	WAP，4	后台批量开通，5	客服，6	广东MISC，7	客户端  	 -->
+  	<channel>2</channel>
+  	<!-- 来源定义：522 用户中心 -->
+  	<comefrom>522</comefrom>
+  	<!-- 客户端定义：2004	139邮箱用户中心 -->
+  	<clientid>2004</clientid>
+  	<!-- 操作人ID -->
+  	<operatorid>2</operatorid>
+  	<!-- 接口根地址 -->
+  	<baseurl>http://192.168.9.181:9001/json/</baseurl>
+  	<!-- 免费订阅接口 -->
+  	<subscribe>subscribeColumn</subscribe>
+  	<!-- 退订免费接口 -->
+  	<unsubscribe>unsubscribeColumn</unsubscribe>
+  	<!-- 收费订阅接口 -->
+  	<feesubscribe>feeCallBackSubscribe</feesubscribe>
+  	<!-- 退订收费接口 -->
+  	<feeunsubscribe>feeCallBackUnsubscribe</feeunsubscribe>
+  	<!-- 设置到达提醒 -->
+  	<setnotify>setNotify</setnotify>
+  	<!-- 查询订阅关系 -->
+  	<queryusersetting>queryUserSetting</queryusersetting>
+  </jpdy>
+  <adapt>
+	<!--
+	版本适配服务
+	-->
+	<getpropversion>
+		<encoding>UTF-8</encoding>
+		<requesturl>http://newvadapt.api.localdomain:9980/adaptweb/s?func=adapt:getpropversion</requesturl>
+		<comefrom>4</comefrom>
+	</getpropversion>
+  </adapt>
+  <calendar>
+  	<encoding>UTF-8</encoding>
+  	<comefrom>13</comefrom>
+  	<!-- 接口地址 -->
+  	<requesturl>http://192.168.9.190:17008/calendar/s?func=</requesturl>
+  </calendar>
+</apiconfig>

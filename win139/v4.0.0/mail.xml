@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<appmailsendconfig>
+  <!--
+    邮件服务器配置
+    activesmtpserver		活跃服务器
+    noactivesmtpserver 	不活跃服务器
+    from                办公室：fengxingoffice,生产环境:win
+    testuserid			测试用户ID
+    testuserpass		测试用户密码
+    testsenddomain		发送到测试线时发件人使用的邮件后缀，不存在则不使用
+    testreceivedomain	发送到测试线时 收件人使用的邮件后缀，不存在则不使用
+  -->
+  <activesmtpserver>smtp.139.com</activesmtpserver>
+  <noactivesmtpserver>smtp.139.com</noactivesmtpserver>
+  <from>fengxingoffice</from>
+  <testuserid>13726273429@139.com</testuserid>
+  <testuserpass>tiger58</testuserpass>
+<!--   <testsenddomain>@hmg1.rd139.com</testsenddomain> -->
+<!--   <testreceivedomain>@hmg1.rd139.com</testreceivedomain> -->
+</appmailsendconfig>
